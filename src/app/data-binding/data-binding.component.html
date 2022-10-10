@@ -1,0 +1,22 @@
+<h2>String Interpolation example -</h2>
+      <h3>{{sentence}}</h3>
+<hr>
+
+<h2>Property Binding example -</h2>
+<img [src]="itemImgUrl">
+<br>
+<!-- Bind button disabled state to `isUnchanged` property -->
+<button type="button" [disabled]="isUnchanged">Button</button>
+
+<hr>
+
+<h2>Event Binding example -</h2>
+<h3>Number- {{number}}</h3>
+<button (click)="increseNum()">add</button>
+
+<hr>
+
+<h2>Two-way Binding example -</h2>
+<input [(ngModel)]="fullName"/>
+<br>
+<p>{{fullName}}</p>

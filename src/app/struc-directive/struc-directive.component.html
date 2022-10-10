@@ -1,0 +1,51 @@
+
+<h2>Examples for Structural directives</h2>
+
+<!-- *ngIf directive -->
+
+<div *ngIf="loginStatus"><h4>Welcome User...!</h4></div>
+
+ <!-- *ngIf directive -->
+
+
+<!-- *ngFor directive -->
+
+<div>
+    <table class="table table-bordered">
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Annual Salary</th>
+            <th>Date Of Birth</th>  
+        </tr>
+        <tr *ngFor="let data of employees">
+            <td>{{data.name}}</td>
+            <td>{{data.gender}}</td>
+            <td>{{data.annualSalary}}</td>
+            <td>{{data.dateOfBirth}}</td>
+
+        </tr>
+    </table>
+</div>
+
+<!-- *ngFor directive -->
+
+
+<!-- *ngSwitch directive -->
+
+<div [ngSwitch]="inpValue">
+    <p *ngSwitchCase="1">You selected number 1</p>
+    <p *ngSwitchCase="2">You selected number 2</p>
+    <p *ngSwitchCase="3">You selected number 3</p>
+    <p *ngSwitchCase="4">You selected number 4</p>
+</div>
+
+
+<button class="btn btn-secondary" (click)="select(1)">1</button>&nbsp;
+<button class="btn btn-secondary" (click)="select(2)">2</button>&nbsp;
+<button class="btn btn-secondary" (click)="select(3)">3</button>&nbsp;
+<button class="btn btn-secondary" (click)="select(4)">4</button>&nbsp;
+
+<!-- *ngSwitch directive -->
+
+

@@ -1,0 +1,13 @@
+
+<table class="table table-bordered">
+  <tr>
+      <th>Employee Name</th>
+      <th>Employee Id</th>
+      <th>Delete Employee</th>
+  </tr>
+  <tr *ngFor="let data of employees ">
+      <td>{{data.Name}}</td>
+      <td>{{data.empId}}</td>
+      <button class="btn btn-danger" (click)="deleteEmployee(data.Name)">delete</button>
+  </tr>
+</table>

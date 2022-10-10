@@ -1,0 +1,10 @@
+<h2>child component!</h2>
+<button (click)="loginUser()">login</button>
+<button (click)="logOutUser()">logout</button>
+<h2 *ngIf="loginConfirm">Welcome !!</h2>
+<h2 *ngIf="!loginConfirm">Please login !</h2>
+<hr>
+<h4>ngOnchanges example</h4>
+
+<h2 *ngIf="userStatus">user Logged In</h2>
+<h2 *ngIf="!userStatus">user Logged off</h2>
